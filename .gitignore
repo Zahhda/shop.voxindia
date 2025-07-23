@@ -1,3 +1,5 @@
 "node_modules\n.next\n.env.local" 
 "node_modules/" 
 "public/images/products/s-line/*.jpg" 
+"node_modules/" 
+"public/images/products/s-line/*.jpg" 

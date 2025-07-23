@@ -8,7 +8,7 @@ const collections = [
     subtitle: "Narrow lamellas for a taller, cozier space",
     colors: ["White", "Grey", "Anthracite", "Black", "Mocca", "Natural", "Natural Black"],
     image: "/collections/s-line.png",
-    link: "/product/687feaf9fb651e62afca33a1", // Only for S-Line
+    link: "/product/687feaf9fb651e62afca33a1", // S-Line link
   },
   {
     id: 2,
@@ -16,6 +16,7 @@ const collections = [
     subtitle: "Medium-width lamellas with extra depth",
     colors: ["White", "Grey", "Anthracite", "Black", "Mocca", "Natural", "Natural Black", "Chocolate"],
     image: "/collections/m-line.png",
+    link: "/product/688078afb931c44cb2ea3fe2", // M-Line link added
   },
   {
     id: 3,
@@ -23,6 +24,7 @@ const collections = [
     subtitle: "Wide lamellas for bold visual impact",
     colors: ["White", "Grey", "Anthracite", "Mocca", "Natural", "Chocolate"],
     image: "/collections/l-line.png",
+    link: "/product/68807aaab931c44cb2ea4119", // L-Line link added
   },
 ];
 

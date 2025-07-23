@@ -21,7 +21,7 @@ const COLOR_HEX = {
 };
 
 const accordionData = [
-  {
+   {
     id: 1,
     question: "What are VOX Linerio Slat Panels?",
     answer:
@@ -185,10 +185,9 @@ function Accordion() {
   );
 }
 
-
 export default function ProductPage() {
   const { id } = useParams();
-  const { products, router, addToCart, user } = useAppContext();
+  const { products, addToCart } = useAppContext();
 
   const [productData, setProductData] = useState(null);
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
@@ -261,26 +260,30 @@ export default function ProductPage() {
       <Navbar />
       <div className="px-6 md:px-16 lg:px-32 pt-14 space-y-10 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {/* Left: Main Image */}
-          <div className="relative">
-            <div className="overflow-hidden rounded-lg bg-gray-50">
+          {/* Left: Main Image + Thumbnails */}
+          <div>
+            <div
+              className="overflow-hidden rounded-lg bg-gray-50 relative w-full h-[450px]"
+              style={{ minHeight: "450px" }}
+            >
               {mainImage ? (
                 <Image
+                  key={mainImage}
                   src={mainImage}
                   alt={productData.name}
-                  width={800}
-                  height={800}
-                  className="w-full h-auto object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover transition-opacity duration-500 ease-in-out"
                   priority
                 />
               ) : (
-                <div className="w-full h-96 flex items-center justify-center bg-gray-200 text-gray-500">
+                <div className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500">
                   No Image Available
                 </div>
               )}
             </div>
 
-            {/* Thumbnails below */}
+            {/* Thumbnails below main image */}
             <div className="flex space-x-4 mt-4 overflow-x-auto scrollbar-hide">
               {imageList.map((img, idx) => (
                 <button
@@ -369,11 +372,11 @@ export default function ProductPage() {
 
             {/* Price */}
             <div className="flex items-center space-x-4 mb-6">
-              <span className="text-3xl font-semibold">${displayPrice.toFixed(2)}</span>
+              <span className="text-3xl font-semibold">₹{displayPrice.toFixed(2)}</span>
               {discountPercent > 0 && (
                 <>
                   <span className="text-gray-500 line-through text-lg">
-                    ${productData.price.toFixed(2)}
+                    ₹{productData.price.toFixed(2)}
                   </span>
                   <span className="bg-red-600 text-white px-2 py-1 rounded text-sm">
                     {discountPercent}% OFF
@@ -387,7 +390,7 @@ export default function ProductPage() {
               <div className="bg-gray-50 p-4 rounded shadow text-center">
                 <div className="text-xs text-gray-600 mb-1">Per sq.ft</div>
                 <div className="font-semibold text-lg">
-                  ${productData.perSqFtPrice?.toFixed(2) ?? "N/A"}
+                  ₹{productData.perSqFtPrice?.toFixed(2) ?? "N/A"}
                 </div>
               </div>
               <div className="bg-gray-50 p-4 rounded shadow text-center">
@@ -422,6 +425,72 @@ export default function ProductPage() {
                 <span>Add to Cart</span>
               </span>
             </button>
+
+            {/* Why Choose Us Section */}
+            <div className="mt-10 border-t pt-6">
+              <h2 className="text-2xl font-bold mb-6">Why Choose Us</h2>
+              <div className="flex justify-around text-center space-x-8">
+                <div className="flex flex-col items-center max-w-[150px]">
+                  {/* Wrench icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-8 w-8 mb-2 text-black"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M14.7 8.7a2.828 2.828 0 10-4 4L6 17v3h3l4.7-4.7a2.828 2.828 0 000-4z"
+                    />
+                  </svg>
+                  <p className="text-sm">Free Installation</p>
+                </div>
+                <div className="flex flex-col items-center max-w-[150px]">
+                  {/* Delivery truck icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-8 w-8 mb-2 text-black"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 9h13l4 4v5H3v-9zM16 3h5v5m-1-1l-4-4M7 21a2 2 0 100-4 2 2 0 000 4zm10 0a2 2 0 100-4 2 2 0 000 4z"
+                    />
+                  </svg>
+                  <p className="text-sm">Free Shipping PAN India</p>
+                </div>
+                <div className="flex flex-col items-center max-w-[150px]">
+                  {/* Shield check icon */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="h-8 w-8 mb-2 text-black"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 3c2.485 0 4.5 1.567 4.5 4.5v5.25c0 3.75-2.985 6.75-4.5 6.75S7.5 16.5 7.5 12.75V7.5C7.5 4.567 9.515 3 12 3z"
+                    />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12l2 2 4-4"
+                    />
+                  </svg>
+                  <p className="text-sm">2 Years Warranty</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

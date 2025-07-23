@@ -1903,7 +1903,7 @@ var _s = __turbopack_refresh__.signature();
 ;
 const OrderSummary = ()=>{
     _s();
-    const { currency, router, getCartCount, getCartAmount, getToken, user, cartItems, setCartItems } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$AppContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
+    const { router, getCartCount, getCartAmount, getToken, user, cartItems, setCartItems } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$AppContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"])();
     const [selectedAddress, setSelectedAddress] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isDropdownOpen, setIsDropdownOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const [userAddresses, setUserAddresses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
@@ -2031,6 +2031,11 @@ const OrderSummary = ()=>{
     }["OrderSummary.useEffect"], [
         user
     ]);
+    // Helper to format INR currency
+    const formatINR = (amount)=>new Intl.NumberFormat("en-IN", {
+            style: "currency",
+            currency: "INR"
+        }).format(amount);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full md:w-96 bg-gray-500/5 p-5",
         children: [
@@ -2039,14 +2044,14 @@ const OrderSummary = ()=>{
                 children: "Order Summary"
             }, void 0, false, {
                 fileName: "[project]/components/OrderSummary.jsx",
-                lineNumber: 156,
+                lineNumber: 159,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                 className: "border-gray-500/30 my-5"
             }, void 0, false, {
                 fileName: "[project]/components/OrderSummary.jsx",
-                lineNumber: 159,
+                lineNumber: 160,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2059,7 +2064,7 @@ const OrderSummary = ()=>{
                                 children: "Select Address"
                             }, void 0, false, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 164,
+                                lineNumber: 165,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2073,7 +2078,7 @@ const OrderSummary = ()=>{
                                                 children: selectedAddress ? `${selectedAddress.fullName}, ${selectedAddress.area}, ${selectedAddress.city}, ${selectedAddress.state}` : "Select Address"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/OrderSummary.jsx",
-                                                lineNumber: 172,
+                                                lineNumber: 173,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -2089,18 +2094,18 @@ const OrderSummary = ()=>{
                                                     d: "M19 9l-7 7-7-7"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/OrderSummary.jsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 187,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/OrderSummary.jsx",
-                                                lineNumber: 177,
+                                                lineNumber: 178,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 168,
+                                        lineNumber: 169,
                                         columnNumber: 13
                                     }, this),
                                     isDropdownOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -2108,20 +2113,19 @@ const OrderSummary = ()=>{
                                         children: [
                                             userAddresses.map((address, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                                     className: "px-4 py-2 hover:bg-gray-500/10 cursor-pointer",
-                                                    onClick: ()=>handleAddressSelect(address),
+                                                    onClick: ()=>setSelectedAddress(address),
                                                     children: [
                                                         address.fullName,
                                                         ", ",
                                                         address.area,
                                                         ", ",
                                                         address.city,
-                                                        ",",
-                                                        " ",
+                                                        ", ",
                                                         address.state
                                                     ]
                                                 }, index, true, {
                                                     fileName: "[project]/components/OrderSummary.jsx",
-                                                    lineNumber: 198,
+                                                    lineNumber: 194,
                                                     columnNumber: 19
                                                 }, this)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -2130,25 +2134,25 @@ const OrderSummary = ()=>{
                                                 children: "+ Add New Address"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/OrderSummary.jsx",
-                                                lineNumber: 207,
+                                                lineNumber: 202,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 196,
+                                        lineNumber: 192,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 167,
+                                lineNumber: 168,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/OrderSummary.jsx",
-                        lineNumber: 163,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2158,7 +2162,7 @@ const OrderSummary = ()=>{
                                 children: "Payment Method"
                             }, void 0, false, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 220,
+                                lineNumber: 215,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -2171,7 +2175,7 @@ const OrderSummary = ()=>{
                                         children: "Pay Online (Razorpay)"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 228,
+                                        lineNumber: 223,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -2179,19 +2183,19 @@ const OrderSummary = ()=>{
                                         children: "Cash on Delivery"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 229,
+                                        lineNumber: 224,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 223,
+                                lineNumber: 218,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/OrderSummary.jsx",
-                        lineNumber: 219,
+                        lineNumber: 214,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2201,7 +2205,7 @@ const OrderSummary = ()=>{
                                 children: "Promo Code"
                             }, void 0, false, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 235,
+                                lineNumber: 230,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2213,7 +2217,7 @@ const OrderSummary = ()=>{
                                         className: "flex-grow w-full outline-none p-2.5 text-gray-600 border"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 239,
+                                        lineNumber: 232,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2221,26 +2225,26 @@ const OrderSummary = ()=>{
                                         children: "Apply"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 244,
+                                        lineNumber: 237,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 238,
+                                lineNumber: 231,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/OrderSummary.jsx",
-                        lineNumber: 234,
+                        lineNumber: 229,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("hr", {
                         className: "border-gray-500/30 my-5"
                     }, void 0, false, {
                         fileName: "[project]/components/OrderSummary.jsx",
-                        lineNumber: 250,
+                        lineNumber: 241,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2257,24 +2261,21 @@ const OrderSummary = ()=>{
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 255,
+                                        lineNumber: 246,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-gray-800",
-                                        children: [
-                                            currency,
-                                            getCartAmount()
-                                        ]
-                                    }, void 0, true, {
+                                        children: formatINR(getCartAmount())
+                                    }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 256,
+                                        lineNumber: 247,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 254,
+                                lineNumber: 245,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2285,7 +2286,7 @@ const OrderSummary = ()=>{
                                         children: "Shipping Fee"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 262,
+                                        lineNumber: 250,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2293,20 +2294,20 @@ const OrderSummary = ()=>{
                                         children: "Free"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 263,
+                                        lineNumber: 251,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 261,
+                                lineNumber: 249,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "flex justify-between"
                             }, void 0, false, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 265,
+                                lineNumber: 253,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2316,35 +2317,32 @@ const OrderSummary = ()=>{
                                         children: "Total"
                                     }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 273,
+                                        lineNumber: 259,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: [
-                                            currency,
-                                            getCartAmount() + Math.floor(getCartAmount() * 0.02)
-                                        ]
-                                    }, void 0, true, {
+                                        children: formatINR(getCartAmount() + Math.floor(getCartAmount() * 0.02))
+                                    }, void 0, false, {
                                         fileName: "[project]/components/OrderSummary.jsx",
-                                        lineNumber: 274,
+                                        lineNumber: 260,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/OrderSummary.jsx",
-                                lineNumber: 272,
+                                lineNumber: 258,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/OrderSummary.jsx",
-                        lineNumber: 253,
+                        lineNumber: 244,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/OrderSummary.jsx",
-                lineNumber: 161,
+                lineNumber: 162,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2353,17 +2351,17 @@ const OrderSummary = ()=>{
                 children: "Place Order"
             }, void 0, false, {
                 fileName: "[project]/components/OrderSummary.jsx",
-                lineNumber: 283,
+                lineNumber: 266,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/OrderSummary.jsx",
-        lineNumber: 155,
+        lineNumber: 158,
         columnNumber: 5
     }, this);
 };
-_s(OrderSummary, "reC9nVBE0gQIBN8+Bev35FAL2y0=", false, function() {
+_s(OrderSummary, "YEsgArSXUnigehNXBHjYiRyJJyI=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$context$2f$AppContext$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useAppContext"]
     ];
@@ -2431,7 +2429,7 @@ const Navbar = ()=>{
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                        href: "/",
+                        href: "/contact",
                         className: "hover:text-gray-900 transition",
                         children: "Contact"
                     }, void 0, false, {

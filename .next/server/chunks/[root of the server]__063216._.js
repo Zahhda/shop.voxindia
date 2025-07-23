@@ -73,7 +73,7 @@ async function connectDB() {
         const opts = {
             bufferCommands: false
         };
-        cached.promise = __TURBOPACK__imported__module__$5b$externals$5d2f$mongoose__$5b$external$5d$__$28$mongoose$2c$__cjs$29$__["default"].connect(`${process.env.MONGODB_URI}/quickcart`, opts).then((mongoose)=>{
+        cached.promise = __TURBOPACK__imported__module__$5b$externals$5d2f$mongoose__$5b$external$5d$__$28$mongoose$2c$__cjs$29$__["default"].connect(`${process.env.MONGODB_URI}/Voxindia`, opts).then((mongoose)=>{
             return mongoose;
         });
     }

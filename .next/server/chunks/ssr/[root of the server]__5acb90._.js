@@ -121,7 +121,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$clerk$2f$n
 ;
 ;
 const metadata = {
-    title: "QuickCart - GreatStack",
+    title: "Voxindia - shop",
     description: "E-Commerce with Next.js "
 };
 function RootLayout({ children }) {

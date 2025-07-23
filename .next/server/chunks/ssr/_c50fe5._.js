@@ -1578,7 +1578,7 @@ const productsDummyData = [
 ];
 const userDummyData = {
     "_id": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-    "name": "GreatStack",
+    "name": "shop",
     "email": "admin@example.com",
     "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18ycnlnUnFiUDBYT2dEZ2h1ZmRXcGlpdWV5OXoiLCJyaWQiOiJ1c2VyXzJzWkZIUzFVSUl5c0p5RFZ6Q3BRaFVoVElodyJ9",
     "cartItems": {
@@ -1616,7 +1616,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1655,7 +1655,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1697,7 +1697,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1714,7 +1714,7 @@ const addressDummyData = [
     {
         "_id": "67a1e4233f34a77b6dde9055",
         "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-        "fullName": "GreatStack",
+        "fullName": "shop",
         "phoneNumber": "0123456789",
         "pincode": 654321,
         "area": "Main Road , 123 Street, G Block",
@@ -2347,7 +2347,7 @@ const Footer = ()=>{
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            children: "contact@greatstack.dev"
+                                            children: "contact@shop.dev"
                                         }, void 0, false, {
                                             fileName: "[project]/components/Footer.jsx",
                                             lineNumber: 44,
@@ -2378,7 +2378,7 @@ const Footer = ()=>{
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                 className: "py-4 text-center text-xs md:text-sm",
-                children: "Copyright 2025 © GreatStack.dev All Right Reserved."
+                children: "Copyright 2025 © shop.dev All Right Reserved."
             }, void 0, false, {
                 fileName: "[project]/components/Footer.jsx",
                 lineNumber: 49,

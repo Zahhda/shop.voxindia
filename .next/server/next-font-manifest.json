@@ -1,24 +1,12 @@
 {
   "app": {
-    "[project]/app/product/[id]/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
-    ],
-    "[project]/app/_not-found/page": [
+    "[project]/app/cart/page": [
       "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
     ],
     "[project]/app/page": [
       "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
     ],
-    "[project]/app/cart/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
-    ],
-    "[project]/app/contact/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
-    ],
-    "[project]/app/add-address/page": [
-      "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
-    ],
-    "[project]/app/my-orders/page": [
+    "[project]/app/product/[id]/page": [
       "static/media/QGYvz_MVcBeNP4NJtEtqUYLknw-s.p.de485432.woff2"
     ]
   },

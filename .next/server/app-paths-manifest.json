@@ -1,16 +1,9 @@
 {
-  "/product/[id]/page": "app/product/[id]/page.js",
+  "/cart/page": "app/cart/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/api/product/list/route": "app/api/product/list/route.js",
   "/api/user/data/route": "app/api/user/data/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/api/cart/update/route": "app/api/cart/update/route.js",
-  "/cart/page": "app/cart/page.js",
   "/api/user/get-address/route": "app/api/user/get-address/route.js",
-  "/contact/page": "app/contact/page.js",
-  "/add-address/page": "app/add-address/page.js",
-  "/api/user/add-address/route": "app/api/user/add-address/route.js",
-  "/my-orders/page": "app/my-orders/page.js",
-  "/api/order/list/route": "app/api/order/list/route.js"
+  "/page": "app/page.js",
+  "/product/[id]/page": "app/product/[id]/page.js"
 }

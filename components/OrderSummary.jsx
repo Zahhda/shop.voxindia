@@ -102,7 +102,7 @@ const OrderSummary = () => {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: razorpayOrder.data.order.amount,
         currency: "INR",
-        name: "QuickCart",
+        name: "Voxindia",
         description: "Order Payment",
         order_id: razorpayOrder.data.order.id,
         handler: async function (response) {

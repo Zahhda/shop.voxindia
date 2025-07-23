@@ -169,7 +169,7 @@ async function connectDB() {
         const opts = {
             bufferCommands: false
         };
-        cached.promise = __TURBOPACK__imported__module__$5b$externals$5d2f$mongoose__$5b$external$5d$__$28$mongoose$2c$__cjs$29$__["default"].connect(`${process.env.MONGODB_URI}/quickcart`, opts).then((mongoose)=>{
+        cached.promise = __TURBOPACK__imported__module__$5b$externals$5d2f$mongoose__$5b$external$5d$__$28$mongoose$2c$__cjs$29$__["default"].connect(`${process.env.MONGODB_URI}/Voxindia`, opts).then((mongoose)=>{
             return mongoose;
         });
     }
@@ -288,7 +288,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$models$2f$Order$2e$js__$5b$a
 ;
 ;
 const inngest = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$inngest$2f$index$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["Inngest"]({
-    id: "quickcart-next"
+    id: "Voxindia-next"
 });
 const syncUserCreation = inngest.createFunction({
     id: 'sync-user-from-clerk'

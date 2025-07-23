@@ -1726,7 +1726,7 @@ const productsDummyData = [
 ];
 const userDummyData = {
     "_id": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-    "name": "GreatStack",
+    "name": "shop",
     "email": "admin@example.com",
     "imageUrl": "https://img.clerk.com/eyJ0eXBlIjoiZGVmYXVsdCIsImlpZCI6Imluc18ycnlnUnFiUDBYT2dEZ2h1ZmRXcGlpdWV5OXoiLCJyaWQiOiJ1c2VyXzJzWkZIUzFVSUl5c0p5RFZ6Q3BRaFVoVElodyJ9",
     "cartItems": {
@@ -1764,7 +1764,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1803,7 +1803,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1845,7 +1845,7 @@ const orderDummyData = [
         "address": {
             "_id": "67a1e4233f34a77b6dde9055",
             "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-            "fullName": "GreatStack",
+            "fullName": "shop",
             "phoneNumber": "0123456789",
             "pincode": 654321,
             "area": "Main Road , 123 Street, G Block",
@@ -1862,7 +1862,7 @@ const addressDummyData = [
     {
         "_id": "67a1e4233f34a77b6dde9055",
         "userId": "user_2sZFHS1UIIysJyDVzCpQhUhTIhw",
-        "fullName": "GreatStack",
+        "fullName": "shop",
         "phoneNumber": "0123456789",
         "pincode": 654321,
         "area": "Main Road , 123 Street, G Block",

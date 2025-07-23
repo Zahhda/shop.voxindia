@@ -1,130 +1,125 @@
+"use client";
+
 import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-export default function PrivacyPolicyPage() {
+export default function TermsAndConditionsPage() {
   return (
-    <main className="max-w-5xl mx-auto p-6 md:p-12 prose prose-lg">
-      <h1 className="text-4xl font-extrabold text-center mt-8 mb-10">
-        Privacy Policy
-      </h1>
+    <>
+      <Navbar />
+      <main className="max-w-5xl mx-auto p-6 md:p-12 prose prose-lg">
+        <h1 className="text-4xl font-extrabold text-center mt-8 mb-10">
+          Terms and Conditions
+        </h1>
 
-      <p><strong>Last updated on 3rd June 2025</strong></p>
+        <p><strong>Last Updated: 3rd June 2025</strong></p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">General Provisions</h2>
-      <p>
-        Your personal data at <strong>VOX India</strong> is controlled and managed by <strong>VOX Interior and Exterior Solutions Private Limited</strong> and <strong>VOX Building Products Private Limited</strong>, companies registered under the Companies Act, 2013, having their registered office situated at Villa No. 84, Adarsh Palm Retreat, Devarabisanahalli, Marathahalli, Outer Ring Road, Bangalore, Karnataka, India, 560103.
-      </p>
-      <p>
-        VOX is engaged in developing and providing comprehensive interior design solutions more fully described in our terms and conditions.
-      </p>
-      <p>
-        We are highly committed to the privacy of your data and information. This policy governs your access/use of this Website. It relates to the collection, storage, usage, processing, and disclosure of your personal data that you disclose to us while interacting with us through our website or any other communication medium, or engaging with us in other related ways, including any sales or marketing events.
-      </p>
-      <p>
-        By accessing our website or using our services through any other mode, you confirm and consent that you have read and agreed to the collection and use of your data and certain authorized third-party service providers in the manner provided under this policy, and to contact you via email, phone, or otherwise.
-      </p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">1. Introduction</h2>
+        <p>
+          Welcome to <strong>VOX India</strong>. These Terms and Conditions govern your access to and use of our e-commerce platform located at{" "}
+          <a href="https://www.shop.voxindia.co" className="text-red-700 underline">
+            https://www.shop.voxindia.co
+          </a>. By accessing our platform, you agree to be bound by these terms.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">1. QUESTIONS OR CONCERNS?</h2>
-      <p>Reading this privacy notice will help you understand your privacy rights and choices. If you have any questions or grievances regarding how we process or handle your data, you may reach out to our grievance officer:</p>
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li><strong>Name:</strong> Yashika Dholi</li>
-        <li><strong>Designation:</strong> Company Secretary</li>
-        <li>
-          <strong>Email Id:</strong> <a href="mailto:companysecretary@voxindia.co" className="text-red-700 underline">companysecretary@voxindia.co</a> (IST 10:00 AM to IST 6:00 PM)
-        </li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">2. Definitions</h2>
+        <ul className="list-disc list-inside space-y-1 mb-4">
+          <li><strong>“We”, “Us”, “Our”</strong> refers to VOX Interior and Exterior Solutions Private Limited and VOX Building Products Private Limited.</li>
+          <li><strong>“You” or “User”</strong> refers to any individual or entity accessing or using the website.</li>
+        </ul>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">2. INFORMATION COLLECTED – What do we collect?</h2>
-      <p>We collect information when you use our services and provide your personal information voluntarily when you register with us, express an interest in obtaining information about us or our products and services, when you participate in activities on the Services, or otherwise when you contact us. By using the Services, you represent that you are at least 18 or that you are the parent or guardian of such a minor and consent to such minor dependent’s use of the Services.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">3. Use of Website</h2>
+        <p>
+          The website and all its contents are intended solely for personal, non-commercial use. Any use of the content, images, or platform for resale, commercial purposes, or scraping data without our express permission is strictly prohibited.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Personal Information disclosed by you:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Your name, address, location, mobile number, email, your interests, profession, gender, etc.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">4. Eligibility</h2>
+        <p>
+          You must be 18 years or older to use this website. By agreeing to these terms, you represent that you are at least 18 years of age or are accessing the site under supervision of a legal guardian.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Property Data:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Details of your property, size of property, preferred materials, schemes for your property, and other details about the property.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">5. Account and Registration</h2>
+        <p>
+          To make purchases, users may be required to register and create an account. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Marketing Data:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Details about information requests you posted in service requests, offers, feedback, comments, quizzes, pictures, and discussions in our chat boxes, preferences for receiving marketing information, call records when you communicate with us for services/inquiries, etc.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">6. Product Description</h2>
+        <p>
+          We attempt to be as accurate as possible in describing our products, including colors, dimensions, and specifications. However, we do not warrant that the product descriptions or other content is error-free, complete, or current.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Transactional/Payment Data:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Information about the transactions you undertake, including details of payments and type of cards used (debit or credit card details) or UPI mandates.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">7. Orders and Pricing</h2>
+        <p>
+          Prices displayed on the website are subject to change. We reserve the right to cancel any order at our discretion, including for pricing errors or availability issues, even after order confirmation.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Information automatically collected:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-4">
-        <li>Computer-identification information obtained from cookies, device and usage info like IP address, browser, device, OS, language preferences, referring URLs, device name, country, location, ISP, usage details, and other technical info.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">8. Payment</h2>
+        <p>
+          We accept major forms of payment, including credit/debit cards and UPI. Your payment information is securely handled by certified third-party gateways.
+        </p>
 
-      <h3 className="text-xl font-semibold mt-6 mb-2">Information collected from other sources:</h3>
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li>Information from public databases, marketing partners, affiliates, data providers, social media, and other third parties, including mailing addresses, job titles, email, phone, intent data, IP addresses, social media profiles, and custom profiles for targeted advertising.</li>
-        <li>Data from social media accounts you use to interact with us, dependent on your privacy settings.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">9. Shipping and Delivery</h2>
+        <p>
+          Orders will be shipped according to estimated timelines but delays may occur due to unforeseen circumstances. All shipping and delivery details are explained at checkout.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">3. PROCESSING YOUR INFORMATION – How do we process this information?</h2>
-      <p>We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent.</p>
-      <p>We may process your information for the following purposes:</p>
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li>To facilitate account creation, authentication, and manage user accounts, to keep your account in working order.</li>
-        <li>To deliver or facilitate delivery services as requested by you.</li>
-        <li>To respond to your queries, inquiries, and resolve any potential issues you might have requested.</li>
-        <li>To send you details about our products and services, changes to our terms and policies, and other similar information.</li>
-        <li>To fulfill and manage your orders, payments, returns, or exchanges made through our services.</li>
-        <li>To request feedback and to contact you about your use of our Services; we may keep records of call and chat records with customers and emails.</li>
-        <li>To send marketing and promotional communications and campaigns.</li>
-        <li>To develop and display personalized content and advertising tailored to your interests, location, and more, identifying usage trends.</li>
-        <li>To keep our services safe and secure, including fraud monitoring and prevention, and to save or protect an individual’s vital interests.</li>
-        <li>To respond to court orders, establish or exercise our legal rights, or defend ourselves against legal claims.</li>
-        <li>To save or protect an individual’s vital interest, such as to prevent harm.</li>
-      </ul>
-      <p><strong>Legality:</strong> We may process your information if you have given us permission (i.e., consent) to use your personal information for a specific purpose. You can withdraw your consent at any time.</p>
-      <p><strong>Consent:</strong> By accessing our platform (Website, WhatsApp, or any other mode), you hereby consent and authorize us, and our associate partners and associated third parties, to use your personal information to contact you via email, phone, or otherwise. This is to ensure that you are aware of all the services and offers that exist with VOX. You also expressly agree that we may contact you to offer any additional products or services offered by third parties associated with VOX through means including but not limited to telephone, SMS, email, WhatsApp, or any other messaging service/mobile application or any other physical, electronic, or digital means. This shall be applicable unless revoked as per the terms of this Policy.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">10. Returns and Refunds</h2>
+        <p>
+          Returns and exchanges are only applicable under certain circumstances, such as manufacturer defects or damaged goods. For more details, please refer to our Return Policy.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">4. WHOM AND WHEN DO WE SHARE YOUR DATA?</h2>
-      <p>We may share information in specific situations described in this section and/or with the following categories of third parties:</p>
-      <ul className="list-disc list-inside space-y-1 mb-6">
-        <li>Vendors, consultants, associates, our group companies, associate companies, business partners, and other third-party service providers who perform services for us or on our behalf and require access to such information to do that work. These third parties include but are not limited to: Ad Networks, Affiliate Marketing Programs, Cloud Computing Services, Communication & Collaboration Tools, Data Analytics Services, Data Storage Service Providers, Finance & Accounting Tools, Government Entities, Order Fulfillment Service Providers, Payment Processors, Performance Monitoring Tools, Product Engineering & Design Tools, Retargeting Platforms, Sales & Marketing Tools, Social Networks, Testing Tools, User Account Registration & Authentication Services, Website Hosting Service Providers, etc.</li>
-        <li>We require all third parties to respect the security of your personal data and to treat it in accordance with the law.</li>
-      </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">11. Intellectual Property</h2>
+        <p>
+          All content on the platform including logos, text, images, and software are the property of VOX India and are protected under applicable intellectual property laws. You are not permitted to use any content without express permission.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">5. THIRD-PARTY LINKS/WEBSITES</h2>
-      <p>We may have third-party links, and this Privacy Policy does not apply to other advertisers or platforms that might have their link on our Website/App. These third-party sites have separate and independent privacy policies. We, therefore, have no responsibility or liability for the content and activities of these linked sites. We cannot guarantee the safety and privacy of data you provide to any third parties.</p>
-      <p>We advise you to consult the respective privacy policies of these third-party advertising servers for more detailed information, including their practices and instructions about how to opt out of certain options.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">12. Limitations of Liability</h2>
+        <p>
+          In no event shall VOX India be liable for any direct, indirect, incidental, or consequential damages resulting from your access or use of the platform or from any content, product, or service.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">6. COOKIES</h2>
-      <p>We may use cookies and similar tracking technologies to access or store information. Specific information about how we use such technologies and how you can refuse certain cookies is set out in our Cookie Notice: COOKIES POLICY.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">13. Indemnification</h2>
+        <p>
+          You agree to indemnify and hold harmless VOX India and its affiliates, officers, and employees from any claim or demand, including reasonable attorneys’ fees, arising from your violation of these Terms or any applicable law.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">7. IS YOUR INFORMATION TRANSFERRED INTERNATIONALLY?</h2>
-      <p>If you are accessing our Services from countries outside where you are based, please be aware that your information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information. We comply with all applicable laws and keep your information safe.</p>
-      <p>By submitting your information, you agree to store, transfer, and process your information and personal data in the manner described above.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">14. Governing Law</h2>
+        <p>
+          These terms are governed by and construed in accordance with the laws of India. Any dissent or legal matter arising under these terms shall be subject to the jurisdiction of Bangalore courts.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">8. RETENTION OF DATA – How Long Do We Keep Your Information?</h2>
-      <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this privacy notice, unless a longer retention period is required or permitted by laws (such as tax, accounting, or other legal requirements).</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">15. Termination</h2>
+        <p>
+          We reserve the right to suspend or terminate access if we believe there is a breach of these Terms or unlawful activity. Upon termination, your right to use the website will cease.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">9. DATA SECURITY – How Do We Keep Your Information Safe?</h2>
-      <p>We have implemented appropriate and reasonable technical and organizational security measures designed to protect the security of any personal information we process.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">16. Amendments to These Terms</h2>
+        <p>
+          We may modify these Terms at any time. Users will be notified of significant changes. Continued use of the platform implies acceptance of the updated terms.
+        </p>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">10. OPTING OUT / WITHDRAWING YOUR CONSENT</h2>
-      <p>If you do not wish to share your personal information, you have the right to withdraw your consent at any time.</p>
-      <p>You can withdraw your consent at any time by writing an email to our grievance officer at <a href="mailto:companysecretary@voxindia.co" className="text-red-700 underline">companysecretary@voxindia.co</a>.</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">17. Contact Details</h2>
+        <p>
+          For any queries, concerns, or support requests, please contact our Grievance Officer:
+        </p>
+        <ul className="list-disc list-inside space-y-1 mb-6">
+          <li><strong>Name:</strong> Yashika Dholi</li>
+          <li><strong>Designation:</strong> Company Secretary</li>
+          <li>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:companysecretary@voxindia.co" className="text-red-700 underline">
+              companysecretary@voxindia.co
+            </a>{" "}
+            (IST 10:00 AM to IST 6:00 PM)
+          </li>
+        </ul>
 
-      <h2 className="text-2xl font-bold mt-8 mb-4">YOUR RIGHTS</h2>
-      <p>You have the right to access your personal information from us and the right to correct or update your information. You can write to us in case of any issues you face at <a href="mailto:companysecretary@voxindia.co" className="text-red-700 underline">companysecretary@voxindia.co</a>.</p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">POLICY UPDATION</h2>
-      <p>We regularly review and may occasionally update our Policy. If we make changes to this Policy, we will notify you of the changes through the Platform or through other means, such as email. We encourage you to periodically review this Policy for the latest information on our privacy practices.</p>
-
-      <p className="mt-10 text-sm text-gray-600 text-center">
-        © 2025 VOX Interior and Exterior Solutions Pvt Ltd. All rights reserved.
-      </p>
-    </main>
+        <p className="mt-10 text-sm text-gray-600 text-center">
+          © 2025 VOX Interior and Exterior Solutions Pvt Ltd. All rights reserved.
+        </p>
+      </main>
+      <Footer />
+    </>
   );
 }

@@ -1,16 +1,14 @@
 {
-  "/product/[id]/page": "app/product/[id]/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/page": "app/page.js",
   "/api/product/list/route": "app/api/product/list/route.js",
   "/api/user/data/route": "app/api/user/data/route.js",
-  "/api/cart/update/route": "app/api/cart/update/route.js",
-  "/cart/page": "app/cart/page.js",
-  "/api/user/get-address/route": "app/api/user/get-address/route.js",
-  "/api/razorpay/order/route": "app/api/razorpay/order/route.js",
+  "/product/[id]/page": "app/product/[id]/page.js",
   "/_not-found/page": "app/_not-found/page.js",
-  "/add-address/page": "app/add-address/page.js",
-  "/api/order/create/route": "app/api/order/create/route.js",
-  "/order-placed/page": "app/order-placed/page.js",
-  "/my-orders/page": "app/my-orders/page.js",
-  "/api/order/list/route": "app/api/order/list/route.js"
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/terms/page": "app/terms/page.js",
+  "/returns-cancellation/page": "app/returns-cancellation/page.js",
+  "/shipping-policy/page": "app/shipping-policy/page.js",
+  "/warranty-policy/page": "app/warranty-policy/page.js",
+  "/cookies-policy/page": "app/cookies-policy/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }

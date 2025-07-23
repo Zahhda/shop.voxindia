@@ -376,6 +376,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -491,6 +499,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -523,6 +535,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -541,10 +557,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .h-20 {
   height: 5rem;
-}
-
-.h-24 {
-  height: 6rem;
 }
 
 .h-3 {
@@ -635,10 +647,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   width: 5rem;
 }
 
-.w-24 {
-  width: 6rem;
-}
-
 .w-28 {
   width: 7rem;
 }
@@ -715,6 +723,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   max-width: 200px;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
@@ -781,6 +793,14 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .resize-none {
   resize: none;
+}
+
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .appearance-none {
@@ -889,6 +909,12 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(.25rem * var(--tw-space-y-reverse));
+}
+
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -941,6 +967,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .text-nowrap {
@@ -1053,11 +1083,6 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.border-t-green-300 {
-  --tw-border-opacity: 1;
-  border-top-color: rgb(134 239 172 / var(--tw-border-opacity, 1));
 }
 
 .border-t-orange-300 {
@@ -1377,6 +1402,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   font-weight: 700;
 }
 
+.font-extrabold {
+  font-weight: 800;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -1463,6 +1492,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .line-through {
   text-decoration-line: line-through;
 }
@@ -1520,6 +1553,12 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
   transition-duration: .15s;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-duration: .15s;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(.4, 0, .2, 1);
@@ -1528,6 +1567,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .duration-200 {
   transition-duration: .2s;
+}
+
+.duration-300 {
+  transition-duration: .3s;
 }
 
 * {
@@ -1550,6 +1593,11 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
 .hover\:bg-gray-100\/90:hover {
   background-color: #f3f4f6e6;
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-gray-500\/10:hover {
@@ -1724,6 +1772,10 @@ input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-o
 
   .md\:p-10 {
     padding: 2.5rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:px-0 {

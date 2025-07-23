@@ -26,7 +26,7 @@ const Footer = () => {
           <h3 className="font-semibold mb-4">Products</h3>
           <ul className="space-y-2 text-sm">
             <li>
-              <Link href="/products/s-line" className="hover:underline">S-Line</Link>
+              <Link href="/product/687feaf9fb651e62afca33a1" className="hover:underline">S-Line</Link>
             </li>
             <li>
               <Link href="/products/m-line" className="hover:underline">M-Line</Link>

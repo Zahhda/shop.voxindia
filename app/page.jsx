@@ -6,14 +6,14 @@ const Home = () => {
     <div className="flex h-screen w-full items-center justify-center bg-black text-white">
       <div className="flex flex-col items-center text-center space-y-6">
         {/* Vercel Logo */}
-        <svg
+{/*         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-10 w-10"
           viewBox="0 0 283 64"
           fill="currentColor"
         >
           <path d="M141 16l-69 120-69-120h138zm142 0l-69 120-69-120h138z" />
-        </svg>
+        </svg> */}
 
         {/* Error Box */}
         <div className="max-w-lg w-full bg-neutral-900 border border-neutral-800 rounded-xl shadow-xl p-6">

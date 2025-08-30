@@ -12,11 +12,7 @@ const Home = () => {
     <>
       <Navbar/>
       <div className="px-6 md:px-16 lg:px-32">
-        <HeaderSlider />
-        <FeaturedProduct />
-        <Banner />
-        <NewsLetter />
-      </div>
+    <h1>WEBSITE HAS FATAL ERROR</h1>      </div>
       <Footer />
     </>
   );
